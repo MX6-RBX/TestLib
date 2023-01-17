@@ -1,7 +1,6 @@
-local module = {}
-
-function module.Print()
+do
+function Print()
 	
 end
 
-return module
+end
