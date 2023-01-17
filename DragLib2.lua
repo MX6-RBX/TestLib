@@ -7,7 +7,7 @@ local DraggableObject 		= {}
 DraggableObject.__index 	= DraggableObject
 
 -- Sets up a new draggable object
-function DraggableObject.new(Object)
+function DraggableObject:new(Object)
 	print("Adding to ", Object)
 	local self 			= {}
 	self.Object			= Object
