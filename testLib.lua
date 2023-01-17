@@ -1,6 +1,8 @@
+local Utl = {
+
 do
-function Print()
-	
+function Utl:Print()
+	print("Works")
 end
 
 end
