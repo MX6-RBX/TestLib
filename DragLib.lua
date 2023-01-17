@@ -38,10 +38,19 @@ function DraggableObject:Enable()
 		return newPosition
 	end
 	
+	
 	self.InputBegan = object.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			preparingToDrag = true
-
+			--[[if self.DragStarted then
+				self.DragStarted()
+			end
+			
+			dragging	 	= true
+			dragStart 		= input.Position
+			startPos 		= Element.Position
+			--]]
+			
 			local connection 
 			connection = input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End and (self.Dragging or preparingToDrag) then
@@ -57,6 +66,7 @@ function DraggableObject:Enable()
 			end)
 		end
 	end)
+	
 	
 	self.InputChanged = object.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
