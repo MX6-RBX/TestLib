@@ -1,0 +1,17 @@
+How to use
+
+
+Calling the Dragging Lib
+local DragLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MX6-RBX/TestLib/main/DragLib2.lua"))()
+
+Adding a gui to the Dragging lib table
+local DragFrame = DragLib:new("Frame")--Change "Frame" To the main frame of your gui/Ui
+
+Enabling Dragging on the frame
+DragFrame:Enable()
+
+Disabling Dragging on the frame
+DragFrame:Disable()
+
+
+Names of variables can be changed just be sure to use those names where needed. 
