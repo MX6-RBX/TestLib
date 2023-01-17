@@ -2,7 +2,7 @@ How to use
 
 
 Calling the Dragging Lib
-local DragLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MX6-RBX/TestLib/main/DragLib2.lua"))()
+local DragLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/MX6-RBX/TestLib/main/DragLib.lua"))()
 
 Adding a gui to the Dragging lib table
 local DragFrame = DragLib:new("Frame")--Change "Frame" To the main frame of your gui/Ui
