@@ -1,7 +1,0 @@
-local TestLib = {}
-  function TestLib:Print()
-    print("test")
- end
-
-
-return TestLib
