@@ -1,4 +1,7 @@
-function Print()
+local module = {}
+
+function module.Print()
 	
-	print("Test")
 end
+
+return module
