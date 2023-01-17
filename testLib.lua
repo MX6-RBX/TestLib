@@ -1,4 +1,4 @@
-local Utl = {
+local Utl = {}
 
 do
 function Utl:Print()
